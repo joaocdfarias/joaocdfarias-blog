@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <div className="flex items-center gap-11">
+        <div className="flex flex-col items-center 2xl:flex-row">
           <div className="flex flex-col">
             <Image src={rounded} alt="Rounded Dots" priority />
             <Image
@@ -23,7 +23,7 @@ export default function Home() {
             />
             <Image src={dots} alt="Dots" className="ml-[480px] mt-[-70px]" priority />
           </div>
-          <div>
+          <div className='mb-16 2xl:mb-0 2xl:ml-[-40px]'>
             <h1 className="text-5xl text-light">
               hello, my name is <strong>João Carlos</strong> <br /> welcome to my website.
             </h1>

@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <>
       <div className="flex flex-col mt-[25%]">
-        <h1 className="text-2xl dark:text-light text-center"> Under construction. Come back later </h1>
+        <h1 className="text-2xl text-light text-center"> Under construction. Come back later </h1>
       </div>
     </>
   )

@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={beVietnamPro.className}>
       <head />
-      <body className="bg-light dark:bg-dark w-[75%] mx-auto transition-colors duration-500">
+      <body className="bg-dark w-[75%] mx-auto">
         <Header />
         {children}
       </body>

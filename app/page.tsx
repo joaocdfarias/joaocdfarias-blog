@@ -24,10 +24,10 @@ export default function Home() {
             <Image src={dots} alt="Dots" className="ml-[480px] mt-[-70px]" priority />
           </div>
           <div>
-            <h1 className="text-5xl dark:text-light">
+            <h1 className="text-5xl text-light">
               hello, my name is <strong>João Carlos</strong> <br /> welcome to my website.
             </h1>
-            <p className="text-2xl mt-2 dark:text-light">
+            <p className="text-2xl mt-2 text-light">
               i’m a <strong>front end</strong> developer <br /> currently working at{' '}
               <strong>
                 <Link className="underline" href="https://sanar.com.br/">
@@ -36,7 +36,7 @@ export default function Home() {
               </strong>
               .
             </p>
-            <div className="flex gap-8 mt-6 invert dark:invert-0">
+            <div className="flex gap-8 mt-6 invert-0">
               <Link href="https://www.github.com/joaocdfarias" target="_blank">
                 <Image src={github} alt="My GitHub" className="hover:opacity-80 transition-opacity duration-300" />
               </Link>

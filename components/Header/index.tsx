@@ -10,27 +10,44 @@ export const Header = () => {
           src="/logo.svg"
           alt="Logo with JC initials refering to 'João Carlos', my name."
           width={45}
-          height={35}
+          height={45}
           draggable={false}
         />
       </Link>
       <nav>
         <ul className="flex gap-8 font-medium">
-          <li>
+          <li className="hover:opacity-90 transition-all duration-300 ease-in-out">
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li className="hover:opacity-90 transition-all duration-300 ease-in-out">
             <Link href="/blog">Blog</Link>
           </li>
-          <li>
+          <li className="hover:opacity-90 transition-all duration-300 ease-in-out">
             <Link href="/showcase">Showcase</Link>
           </li>
-          <li>
-            <Link href="https://www.github.com/joaocdfarias">GitHub</Link>
+          <li className="mt-1">
+            <Link href="https://www.github.com/joaocdfarias" target="_blank">
+              <Image
+                src="/github.svg"
+                alt="GitHub Logo"
+                draggable={false}
+                width={20}
+                height={20}
+              />
+            </Link>
           </li>
-          <li>
-            <Link href="https://www.linkedin.com/in/joaocdfarias">
-              LinkedIn
+          <li className="mt-1">
+            <Link
+              href="https://www.linkedin.com/in/joaocdfarias"
+              target="_blank"
+            >
+              <Image
+                src="/linkedin.svg"
+                alt="LinkedIn Logo"
+                draggable={false}
+                width={20}
+                height={20}
+              />
             </Link>
           </li>
         </ul>

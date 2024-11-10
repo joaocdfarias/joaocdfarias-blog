@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
+import { Header } from "../components/Header";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--font-ibm-plex",
+  preload: true,
+  fallback: ["Georgia", "Times New Roman", "serif"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ibmPlexSerif.className}>{children}</body>
+      <body className={ibmPlexSerif.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

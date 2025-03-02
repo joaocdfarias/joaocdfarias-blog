@@ -4,7 +4,7 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <header className="py-10 flex justify-between max-w-screen-lg my-0 mx-auto items-center">
+    <header className="py-8 flex justify-between max-w-screen-lg my-0 mx-auto items-center">
       <Link href="/">
         <Image
           src="/logo.svg"

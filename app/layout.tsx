@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Serif } from "next/font/google";
-import "./globals.css";
-import { Header } from "../components/Header";
 import AnimatedBackground from "../components/AnimatedBackground";
+import { Header } from "../components/Header";
+import "./globals.css";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
@@ -14,9 +14,10 @@ const ibmPlexSerif = IBM_Plex_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.joaocdfarias.github.io"),
   title: "João Farias | Software Engineer",
   description:
-    "Software Engineer with 3 years of experience specializing in web development. Building high-quality solutions with modern technologies.",
+    "Software Engineer with 3 years of experience specialized in web development. Building high-quality solutions with modern technologies.",
   keywords: [
     "Software Engineer",
     "Web Development",
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "TypeScript",
+    "Node.js",
+    "NestJS",
   ],
   authors: [{ name: "João Farias" }],
   creator: "João Farias",
@@ -52,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "João Farias Portfolio",
     title: "João Farias | Software Engineer",
     description:
-      "Software Engineer with 3 years of experience specializing in web development",
+      "Software Engineer with 3 years of experience specialized in web development",
     images: [
       {
         url: "/og-image-minified.png",
@@ -68,7 +71,7 @@ export const metadata: Metadata = {
     creator: "@joaocdfarias",
     title: "João Farias | Software Engineer",
     description:
-      "Software Engineer with 3 years of experience specializing in web development",
+      "Software Engineer with 3 years of experience specialized in web development",
     images: ["/og-image-minified.png"],
   },
   manifest: "/site.webmanifest",
